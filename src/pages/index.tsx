@@ -9,22 +9,19 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 48,
-  maxWidth: 640,
 };
 const headingAccentStyles = {
-  color: "#663399",
+  color: "#00AD9F",
 };
 const listStyles = {
   listStyle: "none",
   marginBottom: 48,
   paddingLeft: 0,
   fontSize: "1.2em",
-  textAlign: "justify",
 };
 const listItemStyles = {
   fontWeight: 400,
-  maxWidth: 800,
-  marginBottom: 12,
+  marginBottom: 18,
 };
 
 const linkStyle = {
@@ -59,12 +56,13 @@ const IndexPage = () => {
       <title>Thomas Bonnin - Software engineer</title>
       <h1 style={headingStyles}>
         Hello, my name is <span style={headingAccentStyles}>Thomas Bonnin</span>
-        <br />I live in Zurich and I enjoy writing code.
+        <br />I live near Zurich and I enjoy solving problems.
       </h1>
       <ul style={listStyles}>
         <li style={listItemStyles}>
           I write <Keyword name="code" /> for a living. Currently at{" "}
-          <Link href="https://www.gatsbyjs.com" name="Gatsby" />, previously at{" "}
+          <Link href="https://www.netlify.com" name="Netlify" />, previously at{" "}
+          <Link href="https://www.gatsbyjs.com" name="Gatsby" />,{" "}
           <Link href="https://www.tamedia.ch" name="Tamedia" /> and{" "}
           <Link href="https://www.theguardian.com" name="The Guardian" />.
         </li>
@@ -83,8 +81,7 @@ const IndexPage = () => {
           I like to <Keyword name="run" />.
         </li>
         <li style={listItemStyles}>
-          I can't resist <Keyword name="dark chocolate" /> or{" "}
-          <Keyword name="creamy cheese" />.
+          I can't resist <Keyword name="dark chocolate" />.
         </li>
         <li style={listItemStyles}>
           I like <Keyword name="chess" /> and <Keyword name="the mountains" />.
